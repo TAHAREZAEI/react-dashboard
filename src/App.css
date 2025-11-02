@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+/* ⚙️ استایل کلی داشبورد فارسی */
+body {
+  margin: 0;
+  font-family: "Vazirmatn", sans-serif;
+  direction: rtl;
+  background-color: #f4f6f8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+}
+
+/* 🎚️ نوار کناری */
+.sidebar {
+  background-color: #2d3436;
   color: white;
+  width: 220px;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+/* 🧱 بخش اصلی */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* 🚀 نوار بالا */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  background-color: #d63031;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* 📦 کارت‌ها */
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
